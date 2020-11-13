@@ -9,15 +9,15 @@ const Score = require('../models/Score.model')
 
 router.post('/addScore',async (req, res) => {
   try {
-    const { userName, score } = req.body;
+    const { userName, score, height } = req.body;
 
-    console.log(req.body, typeof score);
+    console.log(req.body);
 
     let newScore = new Score({
       'userName':   userName,
       'score': score,
-      'height': 0,
-      'level': Math.ceil(1/1000)
+      'height': height,
+      'level': Math.ceil(height/1000)
     })
     
     await newScore.save();
