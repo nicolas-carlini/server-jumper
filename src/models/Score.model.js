@@ -5,14 +5,8 @@ const {
 
 
 const Score = new Schema({
-    userName: {
-        type: String,
-        default: 'Player'
-    },
-    score:{
-        type: Number,
-        default: 0
-    },
+    userName: String,
+    score: Number
 })
 
 module.exports = model('Score', Score);

@@ -18,7 +18,7 @@ router.post('/addScore',async (req, res) => {
       'score': score
     })
     
-    await newScore.save().exec();
+    await newScore.save();
 
     res.json({
       error: false,

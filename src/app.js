@@ -31,7 +31,6 @@ app.use(morgan('dev'));//develop use
 //routes
 app.use(require(crtl + 'getScore.ctrl'));
 app.use(require(crtl + 'addScore.ctrl'));
-app.use(require(crtl + 'getScoreByLevel.ctrl'));
 
 
 module.exports = app;
