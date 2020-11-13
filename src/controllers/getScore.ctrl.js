@@ -10,7 +10,7 @@ const Score = require('../models/Score.model')
 router.get('/getScore', async (req, res) => {
     try {
     
-        const scoreList = await Score.find().sort({score:-1}).limit(10);
+        const scoreList = await Score.find().sort({score:-1}).limit(20);
 
         res.json({
             error:false,

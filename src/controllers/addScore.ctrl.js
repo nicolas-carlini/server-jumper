@@ -15,9 +15,7 @@ router.post('/addScore',async (req, res) => {
 
     let newScore = new Score({
       'userName':   userName,
-      'score': score,
-      'height': height,
-      'level': Math.ceil(height/1000)
+      'score': score
     })
     
     await newScore.save();
