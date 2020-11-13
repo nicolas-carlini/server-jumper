@@ -12,6 +12,14 @@ const Score = new Schema({
     score:{
         type: Number,
         default: 0
+    },
+    height:{
+        type: Number,
+        default: 0
+    },
+    level:{
+        type: Number,
+        default: 0
     }
 })
 
