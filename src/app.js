@@ -29,7 +29,7 @@ app.use(morgan('dev'));//develop use
 //app.use(require(crtl+'closeRest.ctrl'));
 
 //routes
-app.use(require(crtl + 'getScore.ctrl'));
+app.use(require(crtl + 'getScores.ctrl'));
 app.use(require(crtl + 'addScore.ctrl'));
 
 

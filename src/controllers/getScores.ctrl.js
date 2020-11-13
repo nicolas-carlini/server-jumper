@@ -7,7 +7,7 @@ const router = Router();
 //mongodb
 const Score = require('../models/Score.model')
 
-router.get('/getScore', async (req, res) => {
+router.get('/getScores', async (req, res) => {
     try {
     
         const scoreList = await Score.find().sort({score:-1}).limit(20);
