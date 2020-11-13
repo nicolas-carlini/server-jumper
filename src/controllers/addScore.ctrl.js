@@ -9,9 +9,9 @@ const Score = require('../models/Score.model')
 
 router.post('/addScore',async (req, res) => {
   try {
-    const { userName, score, height } = req.body;
+    const { userName, score } = req.body;
 
-    console.log(req.body);
+    console.log(req.body, typeof score);
 
     let newScore = new Score({
       'userName':   userName,
