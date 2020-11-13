@@ -11,6 +11,8 @@ router.post('/addScore',async (req, res) => {
   try {
     const { userName, score, height } = req.body;
 
+    height = 0;
+
     console.log(req.body);
 
     let newScore = new Score({
